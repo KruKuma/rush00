@@ -6,7 +6,7 @@
 /*   By: nfurst <nfurst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/27 13:04:11 by nfurst            #+#    #+#             */
-/*   Updated: 2026/06/27 13:04:52 by nfurst           ###   ########.fr       */
+/*   Updated: 2026/06/27 13:08:06 by nfurst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putchar(char c);
 
-void	special_line(int x)
+void	top_line(int x)
 {
 	int	l;
 
@@ -59,8 +59,13 @@ void	rush(int x, int y)
 	{
 		while (i < y)
 		{
-			if (i == 0 || i == (y - 1))
-				special_line(x);
+			if (i == 0)
+				top_line(x);
+			else if (i == (y - 1))
+			{
+				bottom_line(x);
+			}
+			
 			else
 			{
 				normal_line(x);
