@@ -6,7 +6,7 @@
 /*   By: nfurst <nfurst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/27 13:04:11 by nfurst            #+#    #+#             */
-/*   Updated: 2026/06/27 13:11:20 by nfurst           ###   ########.fr       */
+/*   Updated: 2026/06/27 13:20:10 by nfurst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,6 @@ void	rush(int x, int y)
 			{
 				bottom_line(x);
 			}
-			
 			else
 			{
 				normal_line(x);
