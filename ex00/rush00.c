@@ -6,7 +6,7 @@
 /*   By: nfurst <nfurst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/27 12:37:16 by nfurst            #+#    #+#             */
-/*   Updated: 2026/06/27 12:53:11 by nfurst           ###   ########.fr       */
+/*   Updated: 2026/06/27 12:56:51 by nfurst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,10 @@ void	special_line(int x)
 	l = 0;
 	while (l < x)
 	{
-		if (l == 0)
-			ft_putchar('A');
-		else if (l == (x - 1))
-			ft_putchar('C');
+		if (l == 0 || l == (x - 1))
+			ft_putchar('o');
 		else
-			ft_putchar('B');
+			ft_putchar('-');
 		l++;
 	}
 	ft_putchar('\n');
@@ -39,10 +37,8 @@ void	normal_line(int x)
 	l = 0;
 	while (l < x)
 	{
-		if (l == 0)
-			ft_putchar('B');
-		else if (l == (x - 1))
-			ft_putchar('B');
+		if (l == 0 || l == (x - 1))
+			ft_putchar('|');
 		else
 			ft_putchar(' ');
 		l++;
