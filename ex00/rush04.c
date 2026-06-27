@@ -6,7 +6,7 @@
 /*   By: nfurst <nfurst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/27 13:04:11 by nfurst            #+#    #+#             */
-/*   Updated: 2026/06/27 13:08:06 by nfurst           ###   ########.fr       */
+/*   Updated: 2026/06/27 13:11:20 by nfurst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,24 @@ void	top_line(int x)
 			ft_putchar('A');
 		else if (l == (x - 1))
 			ft_putchar('C');
+		else
+			ft_putchar('B');
+		l++;
+	}
+	ft_putchar('\n');
+}
+
+void	bottom_line(int x)
+{
+	int	l;
+
+	l = 0;
+	while (l < x)
+	{
+		if (l == 0)
+			ft_putchar('C');
+		else if (l == (x - 1))
+			ft_putchar('A');
 		else
 			ft_putchar('B');
 		l++;
