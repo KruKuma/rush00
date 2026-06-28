@@ -6,7 +6,7 @@
 /*   By: mgrossen <marvin@42.fr>                       +#+                    */
 /*                                                    +#+                     */
 /*   Created: 2026/06/27 11:46:12 by mgrossen       #+#    #+#                */
-/*   Updated: 2026/06/27 12:05:57 by mgrossen       ########   odam.nl        */
+/*   Updated: 2026/06/28 12:05:06 by mgrossen       ########   odam.nl        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ void	rush(int x, int y)
 	int	i;
 
 	i = 0;
-	if (x > 0 && y > 0 && x <= 2147483647 && y <= 2147483647)
+	if (x > 0 && y > 0)
 	{
 		while (i < y)
 		{
@@ -68,8 +68,8 @@ void	rush(int x, int y)
 			i++;
 		}
 	}
+	else if (x == 0 || y == 0)
+		write(1, "A rectangle of 0 is too small to display", 40);
 	else
-	{
 		write(1, "X or Y contains a wrong value", 29);
-	}
 }

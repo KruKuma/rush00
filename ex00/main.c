@@ -6,7 +6,7 @@
 /*   By: mgrossen <marvin@42.fr>                       +#+                    */
 /*                                                    +#+                     */
 /*   Created: 2026/06/27 10:18:11 by mgrossen       #+#    #+#                */
-/*   Updated: 2026/06/27 12:11:47 by mgrossen       ########   odam.nl        */
+/*   Updated: 2026/06/28 11:46:12 by mgrossen       ########   odam.nl        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	main(void)
 	int	x;
 	int	y;
 
-	x = 10;
+	x = 0;
 	y = 14;
 	rush(x, y);
 	return (0);
