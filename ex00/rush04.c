@@ -6,7 +6,7 @@
 /*   By: nfurst <nfurst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/27 13:04:11 by nfurst            #+#    #+#             */
-/*   Updated: 2026/06/28 12:06:03 by mgrossen       ########   odam.nl        */
+/*   Updated: 2026/06/28 13:38:33 by mgrossen       ########   odam.nl        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,7 @@ void	rush(int x, int y)
 		}
 	}
 	else if (x == 0 || y == 0)
-		write(1, "A rectangle of 0 is too small to display". 40);
+		write(1, "A rectangle of 0 is too small to display", 40);
 	else
 		write(1, "X or Y contains a wrong value", 29);
 }
